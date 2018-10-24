@@ -20,4 +20,4 @@ class Command(BaseCommand):
             school = School()
             school.name = row['SchoolName']
             school.description = row['SchoolDescription']
-            school.save()
+            school.save() #this should save
