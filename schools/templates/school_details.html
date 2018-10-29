@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h3>{{ school.name|capfirst }}</h3>
+    {% if school.description %}
+        <p>{{ school.description }}</p>
+    {% endif %}
+
+    <!-- get the list of school administrators -->
+    {% for admin in admins %}
+        <div>
+            <p>{{ admin.username }}</p>
+        </div>
+    {% endfor %}
+
+    <!-- get the list of comments -->
+    {% for comment in comments %}
+    <div>
+        <p>Comments:</p>
+    </div>
+    <div class="schoolComment">
+        <p>{{ comment.author }}</p>
+        <p>{{ comment.description }}</p>
+        <p>{{ comment.rating }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

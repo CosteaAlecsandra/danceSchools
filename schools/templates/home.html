@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    {% for school in schools %}
+        <div class="schoolName">
+            <a href="{% url 'school_details' school.id %}">
+                <h3>{{ school.name|capfirst }}</h3>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
