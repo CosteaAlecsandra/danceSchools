@@ -1,0 +1,22 @@
+.header {
+    background-color: #f4425c;
+    height: 20%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position:fix;
+    color: white;
+}
+
+.header .header-logo-image {
+    height: 50%;
+    position:relative;
+}
+
+.header #img {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+}
