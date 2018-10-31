@@ -9,15 +9,17 @@
         <div id="page" class="hfeed site">
             <header>
                 <div class="header">
-                        <div class = "header-logo-image">
-                                <img src="{% static 'photos/logo.jpg' %}" alt="Dance">
-                        </div>
-                        <div class="header-text">
-                            <h1 id="site-title">
-                                <a href="/" title="Dance schools" rel="home">Dance schools</a>
-                            </h1>
-                        </div>
-                    <p>Dance creates a state of general well body and mind at the same time.</p>
+                    <div class = "header-logo-image">
+                        <img src="{% static 'photos/logo.jpg' %}" id="logo" alt="Dance">
+                    </div>
+                    <div class="header-title">
+                        <h1>
+                            <a href="/" title="Dance schools" id="site-title" rel="home">Dance schools</a>
+                        </h1>
+                    </div>
+                    <div class="header-text">
+                        <p>Dance creates a state of general well body and mind at the same time.</p>
+                    </div>
                 </div>
             </header>
             <div class="main-wrapper">
@@ -35,11 +37,9 @@
                     </div>
                 </div>
             </div>
-            <footer id="colophon">
-                <div class="inner-wrap">
-                    Because you want to try something new for you!
-                </div>
-            </footer>
+            <div class="footer">
+                Because you want to try something new for you!
+            </div>
         </div>
     </body>
 </html>

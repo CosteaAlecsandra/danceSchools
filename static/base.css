@@ -1,22 +1,49 @@
 .header {
     background-color: #f4425c;
-    height: 20%;
+    height: 15%;
     top: 0px;
     left: 0px;
     right: 0px;
-    position:fix;
+    position: absolute;
     color: white;
 }
 
 .header .header-logo-image {
-    height: 50%;
+    height: 60%;
     position:relative;
+    width: 20%;
+    left:30%;
+    top:20%;
 }
 
-.header #img {
-    height: 50px;
-    width: 50px;
+.header .header-logo-image #logo {
+    height: 100%;
+    width: 25%;
 }
 
-footer {
+.header .header-title {
+    height: 60%;
+    position:relative;
+    width: 50%;
+    left:38%;
+    bottom: 50%;
+    color: white;
+}
+
+#site-title {
+    color: #93041a;
+}
+
+.header p {
+    bottom: 0px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4425c;
+    color: white;
+    text-align: center;
 }
