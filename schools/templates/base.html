@@ -1,45 +1,44 @@
 {% load static %}
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>Dance Schools</title>
-        <link rel="stylesheet" id="ample-style-css" href="{% static 'base.css' %}" type="text/css" media="all">
-    </head>
-    <body class="wide">
-        <div id="page" class="hfeed site">
-            <header>
-                <div class="header">
-                    <div class = "header-logo-image">
-                        <img src="{% static 'photos/logo.jpg' %}" id="logo" alt="Dance">
-                    </div>
-                    <div class="header-title">
-                        <h1>
-                            <a href="/" title="Dance schools" id="site-title" rel="home">Dance schools</a>
-                        </h1>
-                    </div>
-                    <div class="header-text">
-                        <p>Dance creates a state of general well body and mind at the same time.</p>
-                    </div>
-                </div>
-            </header>
-            <div class="main-wrapper">
-                <div class="single-page clearfix">
-                    <div class="inner-wrap">
-                        <p>
-                            Dancing means connection with yourself, the freedom of spirit, new friends and a lot of experiences and feelings that you expect to discover. Dance develops your social
-                            skills and encourages fun. In addition, dance gives you the chance to meet people from different cultures, that can help in personal development and interpersonal
-                            relationships.
-                        </p>
-                        <div>
-                        {% block content %}
-                        {% endblock %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                Because you want to try something new for you!
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Dance Schools</title>
+    <link rel="stylesheet" id="ample-style-css" href="{% static 'base.css' %}" type="text/css" media="all">
+</head>
+<body class="wide">
+<header>
+    <div class="header">
+        <div class="header-logo-image">
+            <img src="{% static 'photos/logo.jpg' %}" id="logo" alt="Dance">
         </div>
-    </body>
+        <div class="header-title">
+            <h1>
+                <a href="/" title="Dance schools" id="site-title" rel="home">Dance schools</a>
+            </h1>
+        </div>
+        <div class="header-text">
+            <p>Dance creates a state of general well body and mind at the same time.</p>
+        </div>
+    </div>
+</header>
+<div class="main-wrapper">
+    <div class="inner-wrap">
+        <p class="main-presentation">
+            Dancing means connection with yourself, the freedom of spirit, new friends and a lot of experiences and
+            feelings that you expect to discover. Dance develops your social
+            skills and encourages fun. In addition, dance gives you the chance to meet people from different cultures,
+            that can help in personal development and interpersonal
+            relationships.
+        </p>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+<div class="footer">
+    Because you want to try something new for you!
+</div>
+
+</body>
 </html>

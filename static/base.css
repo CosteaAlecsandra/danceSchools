@@ -38,6 +38,24 @@
     bottom: 0px;
 }
 
+.main-wrapper {
+    position:relative;
+    top: 17%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.main-wrapper .main-presentation {
+    border-bottom: 1px solid #aaa;
+    text-align: justify;
+}
+
+.main-wrapper .content {
+    overflow-y: scroll;
+}
+
 .footer {
     position: fixed;
     left: 0;
