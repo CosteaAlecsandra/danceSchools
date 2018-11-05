@@ -54,6 +54,7 @@
 
 .main-wrapper .content {
     overflow-y: scroll;
+    height: 60%;
 }
 
 .footer {
